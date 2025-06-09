@@ -34,7 +34,7 @@ import Review from './Pages/Review';
 import ResetPassword from './Pages/ResetPassword';
 import Payment from './Pages/Tickets/Payment';
 import EditProfile from './Pages/EditProfile';
-import ProtectedRoute from './components/ProtectedRoute';
+import ProtectedRoute from './Components/ProtectedRoute';
 
 const App = () => {
   const location = useLocation();
