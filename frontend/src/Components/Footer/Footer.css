@@ -1,0 +1,55 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f7f7;
+    margin-top:auto;
+    padding: 15px 4%;
+    width: 100%;
+    height: 280px;
+}
+.flogo{
+    width: 160px;
+    margin: 5px 12px;
+    cursor: pointer;
+
+}
+.liTitle{
+    flex: 1;
+    text-align: left;
+    margin: 2em;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.ulf{
+    flex: 1;
+    list-style: none;
+    text-align: left;
+    margin: 5px;
+}
+.ulf li{
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.est{
+    color: #484848e2;
+    text-decoration: none;
+}
+
+.est:hover{
+    color: #112d4eef;
+}
+
+.socials li{
+    list-style: none;
+    margin: 5px 12px;
+    display: inline-block;
+}
+.socials li img{
+    width: 18px;
+}
+

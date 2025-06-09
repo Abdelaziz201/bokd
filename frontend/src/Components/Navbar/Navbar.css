@@ -1,0 +1,136 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 4%;
+    height: 90px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo{
+    width: 7em;
+    cursor: pointer;
+}
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: left;
+    margin: 10px;
+
+}
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+ul li a:hover{
+    color: #112d4ee2;
+}
+
+.nvsearch-box{
+    display: inline-block;;
+    position: relative;
+    align-items: center;
+    background: #eaeaea;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.nvsearch-box input{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #000000;
+    font-size: 18px;
+    max-width: 200px;
+    border: none;
+}
+.nvsearch-box input::placeholder{
+    color: #b2b2b2;
+}
+.nvsearch-box img{
+    width: 30px;
+    cursor: pointer;
+}
+.login-btn{
+    background: #112D4E;
+    border-radius: 15px;
+    width: 80px;
+    height: 60px;
+    border: 0;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+.login img{
+    width: 45px;
+}
+.login-btn:hover{
+    background: #183d67dd;
+}
+.login{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #174274;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: rgb(255, 255, 255);
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    font-weight:550;
+}
+.dropdown-content a:hover{
+    background-color: #112D4E;
+    border-radius: 5px;
+
+}
+.show{
+    display: block;
+}
+
+
+.search-dropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 200px;
+  top: 100%;
+  left: 40px;
+  z-index: 1000;
+  max-height: 400px;
+  min-width: 150px;
+  overflow-y: auto;
+  border-radius: 0 0 25px 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.search-dropdown a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.search-dropdown a:hover {
+  background-color: #f0f0f0;
+}

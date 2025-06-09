@@ -1,0 +1,219 @@
+/* ===================== */
+/* === MODAL WRAPPER === */
+/* ===================== */
+.applications-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ===================== */
+/* === MODAL CONTENT === */
+/* ===================== */
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===================== */
+/* === CLOSE BUTTON === */
+/* ===================== */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* === TAB BUTTONS === */
+/* ===================== */
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  justify-content: center;
+}
+
+.tab-buttons button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab-buttons .active {
+  background: #1d3557;
+  color: white;
+  border-color: #1d3557;
+}
+
+/* ===================== */
+/* === APPLICANT LIST === */
+/* ===================== */
+.applicant-list {
+  margin-top: 10px;
+}
+
+.applicant-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.applicant-item span {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* ===================== */
+/* === STATUS STYLES === */
+/* ===================== */
+.applicant-status {
+  min-width: 120px;
+  text-align: right;
+  font-weight: bold;
+  margin-left: 32px;
+  flex-shrink: 0;
+}
+
+.applicant-status.approved { color: green; }
+.applicant-status.rejected { color: #e57373; }
+.applicant-status.pending { color: #888; }
+
+/* ===================== */
+/* === DELETE BUTTON === */
+/* ===================== */
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #dc3545;
+  margin-left: 16px;
+  transition: transform 0.2s;
+}
+
+/* ===================== */
+/* === DETAILS VIEW === */
+/* ===================== */
+.application-details h3 {
+  margin-top: 0;
+  color: #1d3557;
+}
+
+.application-details p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* ===================== */
+/* === BACK BUTTON === */
+/* ===================== */
+.back-btn {
+  margin-top: 20px;
+  background: #1d3557;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* ===================== */
+/* === LOADING STATES === */
+/* ===================== */
+.submit-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===================== */
+/* === ERROR STATES === */
+/* ===================== */
+.error-field {
+  border: 2px solid #dc3545 !important;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ===================== */
+/* === CATEGORY TAGS === */
+/* ===================== */
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.category-card {
+  padding: 6px 12px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: all 0.2s;
+}
+
+.category-card.selected {
+  background: #1d3557;
+  color: white;
+  border-color: #1d3557;
+}
+
+.category-card:not(.selected):hover {
+  background: #e9ecef;
+}
+
+
+.application-details img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-right: 10px;
+}

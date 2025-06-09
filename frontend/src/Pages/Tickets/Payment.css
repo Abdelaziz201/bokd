@@ -1,0 +1,46 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 80vh;
+}
+.payment-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.payment-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.PF-label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.PF-inp{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.PF-sub-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #112D4E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.PF-sub-btn:hover {
+    background-color: #1b3e65;
+    transition: background-color 0.3s ease;
+}

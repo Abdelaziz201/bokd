@@ -1,0 +1,155 @@
+/* ========================= */
+/* === CONTAINER & HEADER == */
+/* ========================= */
+.user-event-requests {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.user-event-requests h2 {
+  margin-bottom: 15px;
+  color: #1d3557;
+}
+
+/* ========================= */
+/* === LIST DISPLAY STYLES = */
+/* ========================= */
+.user-event-list {
+  list-style: none;
+  padding: 0;
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.user-event-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.user-event-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.user-event-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.user-event-name {
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.user-event-type {
+  color: #223a5f;
+  font-weight: 500;
+}
+
+/* ========================= */
+/* === DETAILS STYLES ====== */
+/* ========================= */
+.user-event-details h3 {
+  margin-top: 0;
+  color: #1d3557;
+}
+
+.user-event-details p {
+  margin: 6px 0;
+}
+
+/* ========================= */
+/* === ACTION BUTTONS ====== */
+/* ========================= */
+.user-event-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.user-event-actions .confirm,
+.user-event-actions .delete,
+.user-event-actions .back {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm {
+  background-color: #28a745;
+  color: white;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.back {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* ========================= */
+/* === STATUS BADGES ======= */
+/* ========================= */
+.user-event-status.approved {
+  color: #28a745;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.user-event-status.rejected {
+  color: #dc3545;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* ========================= */
+/* === TRASH ICON ========== */
+/* ========================= */
+.user-event-trash-btn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.user-event-trash-btn:hover {
+  background: #ffeaea;
+}
+
+.user-event-details-trash {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  color: #a0a0b0;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, color 0.2s;
+}
+
+.user-event-details-trash:hover {
+  background: #ffeaea;
+  color: #dc3545;
+}

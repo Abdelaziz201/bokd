@@ -1,0 +1,134 @@
+/* swiper-carousel.css */
+.swiper-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  object-fit:cover;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient( to top, #000000bd, #00000000) ;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.slide-content .ch3 {
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.slide-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+.slide-content button{
+  width: 10em;
+  height: 3.5em;
+  margin: 10px 5px;
+  background: #112D4E;
+  border: none;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.slide-content button:hover{
+  cursor: pointer;
+  background: #3F72AF;
+  border-bottom: #3333336a;
+  border-bottom-style: groove;
+}
+
+
+/* Navigation arrows */
+.custom-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Base styles for both arrows */
+.custom-prev,
+.custom-next {
+  pointer-events: auto; /* Re-enable clicks on arrows */
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  user-select: none;
+  margin: 0 15px;
+}
+
+/* Hover effects */
+.custom-prev:hover,
+.custom-next:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+/* Active/pressed effect */
+.custom-prev:active,
+.custom-next:active {
+  transform: scale(0.95);
+}
+
+.custom-prev {
+  left: 0;
+}
+
+.custom-next {
+  right: 0;
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  background: #999;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #333;
+}

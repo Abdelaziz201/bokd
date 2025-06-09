@@ -1,0 +1,142 @@
+/* === About Section === */
+.about-us {
+  background: white;
+  padding: 60px 20px;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-text .sub {
+  color: #999;
+  margin: 0 0 18px;
+  display: block;
+}
+
+.about-text p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.about-img {
+  width: 300px;
+  height: 380px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* === Partners Section === */
+.partners-section {
+  background-color: #172b49;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.partners-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.partners-container p {
+  max-width: 850px;
+  margin: 10px auto 25px;
+  color: #cdd0d4;
+  line-height: 1.6;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.partners-logos img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* === Partner Logos - Unique Sizes & Filters === */
+.logo.aws {
+  width: 120px;
+  filter: brightness(0) invert(9);
+  margin-top: 30px;
+}
+
+.logo.atilim {
+  width: 380px;
+  filter: brightness(0) invert(9);
+  margin-top: 30px;
+}
+
+.logo.google {
+  width: 180px;
+  filter: brightness(0) invert(9);
+  margin-top: 30px;
+}
+
+.logo.paypal {
+  width: 200px;
+  filter: brightness(0) invert(9);
+  margin-top: 30px;
+}
+
+/* === Why Section === */
+.why-section {
+  background: white;
+  padding: 60px 20px;
+}
+
+.why-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.why-container h1 {
+  margin-bottom: 0;
+}
+
+.why-container .sub {
+  color: #999;
+  margin: 0 0 18px;
+  display: block;
+}
+
+.why-container p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.why-features {
+  margin: 32px 0 24px;
+  padding-left: 24px;
+  list-style-type: disc;
+}
+
+.why-features li {
+  margin-bottom: 18px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
