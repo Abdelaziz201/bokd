@@ -25,7 +25,7 @@ export default function ResetPassword() {
         setIsLoading(true);
         try {
             const response = await axios.post(
-                `http://localhost:5000/api/users/reset-password/${token}`,
+                `https://bokd.onrender.com/api/users/reset-password/${token}`,
                 { newPassword }
             );
 

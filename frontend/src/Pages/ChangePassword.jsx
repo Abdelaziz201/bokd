@@ -20,7 +20,7 @@ export default function ChangePassword() { //backend starts here
     setMessage({ text: '', isError: false });
 
     try {
-      const response = await axios.put(`http://localhost:5000/api/users/change-password/${user.id}`, {
+      const response = await axios.put(`https://bokd.onrender.com/api/users/change-password/${user.id}`, {
         userId: user.id,
         currentPassword,
         newPassword,

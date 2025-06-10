@@ -18,7 +18,7 @@ export default function ForgotPassword() {
     e.preventDefault(); // prevent page reload
 
     try {
-      const res = await axios.post('http://localhost:5000/api/users/forgot-password', { email }); // 👉 Call backend route //e1
+      const res = await axios.post('https://bokd.onrender.com/api/users/forgot-password', { email }); // 👉 Call backend route //e1
       setMessage('Reset link sent! Please check your email.');
       setError('');
     } catch (err) {

@@ -50,7 +50,7 @@ const Booking = () => {
 
       // API call to your backend
       const response = await axios.post(
-        "http://localhost:5000/api/reservation", 
+        "https://bokd.onrender.com/api/reservation", 
         bookingData
       );
 
