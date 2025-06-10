@@ -141,7 +141,7 @@ const ApplicationsModal = ({ onClose }) => {
             <h3>{selectedApplicant.name}</h3>
             {selectedApplicant.photo && (
               <img
-                src={`http://localhost:5000${selectedApplicant.photo}`}
+                src={`https://bokd.onrender.com${selectedApplicant.photo}`}
                 alt={selectedApplicant.name}
                 className="application-photo"
                 
