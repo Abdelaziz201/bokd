@@ -108,7 +108,7 @@ const SwiperCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/concert1.jpg" alt="Slide 1" />
+          <img src="images/concert1.jpg" alt="Slide 1" />
           <div className="slide-content">
             <h3 className='ch3'>Book Your Ticket Now!</h3>
             <p>Discover various upcoming events to book a ticket for them</p>
