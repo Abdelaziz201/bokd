@@ -4,6 +4,7 @@ import Carousel from '../Components/Carousel/Carousel'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../context/AuthContext'  
 import { FaStar } from 'react-icons/fa';
+import userAvatar from '../assets/user-3296.png';
 
 export default function Homepage() {
    const { isAdmin } = useContext(AuthContext);
@@ -123,7 +124,7 @@ export default function Homepage() {
               {reviews.length > 0 ? (
               [...reviews, ...reviews].map((review, index) => (
                 <div key={index} className="review-card">
-                  <img src="src/assets/user-3296.png" alt="avatar" className="avatar" />
+                  <img src={userAvatar} alt="avatar" className="avatar" />
                   <div className="text">
                     <h4>{review.user}</h4>
                     <div>{renderStars(review.rating)}</div> {/* Render stars nicely */}
