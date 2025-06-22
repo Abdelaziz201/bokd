@@ -80,7 +80,7 @@ export default function Login() {
 
         setIsLoading(true);
         try {
-            await axios.post('https://bokd.onrender.com//api/users', signupData);
+            await axios.post('https://bokd.onrender.com/api/users', signupData);
             
             setMessage({ 
                 text: 'Signup successful! Please login.', 
